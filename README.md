@@ -2,9 +2,9 @@
 
 * [Sitio web Documentación multilingüe](https://github.com/xxai-doc)
 
-El código frontal del sitio web es de código abierto, bienvenido a ayudar a optimizar la traducción
+El código de la interfaz del sitio web es de código abierto, bienvenido a ayudar a optimizar la traducción
 
-* [código de front-end](https://github.com/xxai-art/web)
+* [Código de interfaz](https://github.com/xxai-art/web)
 * [Paquetes de idiomas para el sitio en su conjunto](https://github.com/xxai-art/web/tree/main/i18n)
 * [Paquetes de idiomas para módulos de inicio de sesión](https://github.com/wacpkg/user/tree/main/ui.i18n)
 * [Sitio web Documentación multilingüe](https://github.com/xxai-doc)
