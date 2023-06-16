@@ -17,14 +17,14 @@ El lenguaje de programación front-end es [@w5/coffee_plus](http://npmjs.com/@w5
 
 Construir sobre los siguientes 3 proyectos
 
-### [@w5/mdt](https://www.npmjs.com/package/@w5/mdt)
+* [@w5/mdt](https://www.npmjs.com/package/@w5/mdt)
 
-La plantilla de descuento, con el sufijo `.mdt` , puede hacer referencia a archivos externos con una sintaxis similar a `<+ ./coffee_plus/import.js>` .
+  El sufijo es `.mdt` , puede usar una sintaxis similar a `<+ ./coffee_plus/import.js>` para hacer referencia a archivos externos y generar rebajas con el sufijo `.md` .
 
-[@w5/trmd](https://www.npmjs.com/package/@w5/trmd)
+* [@w5/trmd](https://www.npmjs.com/package/@w5/trmd)
 
-La traducción de Markdown no traducirá códigos ni enlaces, y almacenará en caché las oraciones traducidas. Si se modifica la traducción pero no se modifica el texto original, ejecutarlo de nuevo no sobrescribirá la modificación de la traducción.
+  La traducción de Markdown no traducirá códigos ni enlaces, y almacenará en caché las oraciones traducidas. Si se modifica la traducción pero no se modifica el texto original, ejecutarlo de nuevo no sobrescribirá la modificación de la traducción.
 
-[@w5/i18n](https://www.npmjs.com/package/@w5/i18n)
+* [@w5/i18n](https://www.npmjs.com/package/@w5/i18n)
 
-Archivos de idioma para traducir sitios web generados `yaml` .
+  Archivos de idioma para traducir sitios web generados `yaml` .
