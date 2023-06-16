@@ -1,10 +1,10 @@
 <p align="center"><a href="https://xxai.art"><img src="https://cdn.jsdelivr.net/gh/xxai-art/doc/logo.svg"/></a><br/><a href="https://xxai.art"><img src="https://cdn.jsdelivr.net/gh/xxai-art/doc/xxai.svg"/></a></p><p align="center"><a href="https://github.com/xxai-art/doc#readme"><img alt="I18N" src="https://cdn.jsdelivr.net/gh/wactax/img/t.svg"/></a>　<a href="https://groups.google.com/u/0/g/xxai-art"><img alt="Google Groups" src="https://cdn.jsdelivr.net/gh/wactax/img/g-groups.svg"/></a></p>
 
-# xxAI.arte
+Se recomienda instalar nodejs, [direnv](https://direnv.net) , [bun](https://github.com/oven-sh/bun) primero y luego `direnv allow` después de ingresar al directorio ( [el .envrc](https://github.com/xxai-art/doc/blob/main/.envrc) se ejecutará automáticamente después de ingresar al directorio).
 
-Parte del código del sitio web es de código abierto, bienvenido a ayudar a optimizar la traducción.
+El significado es: traducción del chino al japonés, coreano, inglés, traducción del inglés a todos los demás idiomas. Si solo desea admitir chino e inglés, puede escribir `zh: en` .
 
-## código de front-end
+El significado es: traducción del chino al japonés, coreano, inglés, traducción del inglés a todos los demás idiomas. Si solo desea admitir chino e inglés, puede escribir `zh: en` .
 
 * [código de front-end](https://github.com/xxai-art/web)
 * [Paquetes de idiomas para el sitio en su conjunto](https://github.com/xxai-art/web/tree/main/i18n)
@@ -31,15 +31,15 @@ Construir sobre los siguientes 3 proyectos
 
 ### Instrucciones de automatización de traducción de documentos
 
-Ver repositorio [xxai-art/doc](https://github.com/xxai-art/doc)
+Ver repositorio de código [xxai-art/doc](https://github.com/xxai-art/doc)
 
-Se recomienda instalar nodejs, [direnv](https://direnv.net) y [bun](https://github.com/oven-sh/bun) primero, y luego ejecutar `direnv allow` después de ingresar al directorio.
+Se recomienda instalar nodejs, [direnv](https://direnv.net) , [bun](https://github.com/oven-sh/bun) primero y luego `direnv allow` después de ingresar al directorio ( [el .envrc](https://github.com/xxai-art/doc/blob/main/.envrc) se ejecutará automáticamente después de ingresar al directorio).
 
-Para evitar almacenes demasiado grandes traducidos a cientos de idiomas, creé un almacén de código separado para cada idioma y creé una organización para almacenar este almacén.
+Para evitar la gran base de código traducida a cientos de idiomas, creé una base de código separada para cada idioma y creé una organización para almacenar la base de código
 
-Establecer la variable de entorno `GITHUB_ACCESS_TOKEN` y luego ejecutar [create.github.coffee](https://github.com/xxai-art/doc/blob/main/create.github.coffee) creará automáticamente el almacén.
+Establecer la variable de entorno `GITHUB_ACCESS_TOKEN` y luego ejecutar [create.github.coffee](https://github.com/xxai-art/doc/blob/main/create.github.coffee) creará automáticamente el repositorio de código.
 
-Por supuesto, también puedes ponerlo en un almacén.
+Por supuesto, también puede ponerlo en una base de código.
 
 Referencia del script de traducción [run.sh](https://github.com/xxai-art/doc/blob/main/run.sh)
 
@@ -71,4 +71,8 @@ La API de Google se utiliza para la traducción gratuita. Si no puede acceder a 
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 ```
 
-El script de traducción generará un caché de traducción en el directorio `.i18n` , verifíquelo con `git status` y agréguelo al repositorio de código para evitar traducciones repetidas.
+El script de traducción generará un caché traducido en el directorio `.i18n` , verifíquelo con `git status` y agréguelo al repositorio de código para evitar traducciones repetidas.
+
+Ejecute `bunx i18n` cada vez que modifique la traducción para actualizar el caché.
+
+Si el texto original y la traducción se modifican al mismo tiempo, el caché se confundirá, por lo que si desea modificar, solo puede modificar uno y luego ejecutar `bunx i18n` para actualizar el caché.
